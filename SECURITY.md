@@ -19,3 +19,4 @@ Before publishing a release:
 - verify `.env.example` contains placeholders only
 - verify README examples do not contain real credentials
 - verify the project does not bundle a default API key
+

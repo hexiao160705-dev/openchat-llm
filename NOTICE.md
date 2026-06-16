@@ -24,3 +24,4 @@ The original MIT license text is preserved in `LICENSE`.
 ## Compliance Notes
 
 This repository keeps the upstream MIT license and copyright notice. Third-party dependency licenses should be checked before publishing each release.
+

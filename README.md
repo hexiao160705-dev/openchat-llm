@@ -135,3 +135,4 @@ Do not commit API keys, access tokens, passwords, or internal service credential
 
 - Original project: [ChatGPTNextWeb/NextChat](https://github.com/ChatGPTNextWeb/NextChat)
 - License: [MIT](./LICENSE)
+
