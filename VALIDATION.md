@@ -24,6 +24,8 @@ Validation date: 2026-06-16
 
 ## Publishing Status
 
-The GitHub repository page and compliance files were published through the GitHub connector.
+The full source tree was pushed to `hexiao160705-dev/openchat-llm`.
 
-Full source publishing and GitHub Release creation were not completed in this environment because local `git` and `gh` are not installed, and the available GitHub connector does not provide a complete repository push or release creation workflow.
+The `v0.1.0` Git tag was pushed successfully.
+
+GitHub Release creation was not completed because GitHub CLI was installed but not authenticated. Run `gh auth login`, then create the release from the existing tag.
