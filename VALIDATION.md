@@ -28,4 +28,4 @@ The full source tree was pushed to `hexiao160705-dev/openchat-llm`.
 
 The `v0.1.0` Git tag was pushed successfully.
 
-GitHub Release creation was not completed because GitHub CLI was installed but not authenticated. Run `gh auth login`, then create the release from the existing tag.
+The GitHub Release `v0.1.0` was created from the pushed tag after GitHub CLI authentication was completed.
