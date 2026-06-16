@@ -4,6 +4,14 @@ Lightweight OpenAI-compatible chat client based on [NextChat](https://github.com
 
 This is a personal experimental fork for validating a compliant MIT open-source modification and release workflow. It does not include any bundled API key, company endpoint, free quota, or payment flow.
 
+[中文说明](./README_CN.md)
+
+## 中文简介
+
+`openchat-llm` 是一个基于 [NextChat](https://github.com/ChatGPTNextWeb/NextChat) 的轻量实验性开源聊天客户端，主要用于验证 MIT 开源项目复制、轻量修改、依赖检测、密钥检测、Docker 构建和 GitHub 发布的完整合规流程。
+
+本项目保留 OpenAI-compatible API 的配置入口，用户需要自行配置 API Key、Base URL、模型列表和访问码。项目不内置任何 API Key，不绑定公司中转站，不提供免费额度或付费承诺，也不表示获得上游 NextChat 官方背书。
+
 ## Features
 
 - OpenAI-compatible API configuration
@@ -135,4 +143,3 @@ Do not commit API keys, access tokens, passwords, or internal service credential
 
 - Original project: [ChatGPTNextWeb/NextChat](https://github.com/ChatGPTNextWeb/NextChat)
 - License: [MIT](./LICENSE)
-

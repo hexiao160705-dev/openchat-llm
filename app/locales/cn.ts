@@ -1,6 +1,5 @@
 import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
-import { SAAS_CHAT_UTM_URL } from "@/app/constant";
 
 const isApp = !!getClientConfig()?.isApp;
 
@@ -9,12 +8,10 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? `😆 对话遇到了一些问题，不用慌:
-       \\ 1️⃣ 请在[设置](${SAAS_CHAT_UTM_URL})中配置你自己的 API 资源
-       \\ 2️⃣ 如果你想消耗自己的 OpenAI 资源，点击[这里](/#/settings)修改设置 ⚙️`
+       \\ 1️⃣ 请在[设置](/#/settings)中配置你自己的 OpenAI-compatible API 资源 ⚙️`
       : `😆 对话遇到了一些问题，不用慌:
-       \ 1️⃣ 请在[设置](${SAAS_CHAT_UTM_URL})中配置你自己的 API 资源
-       \ 2️⃣ 如果你正在使用私有部署版本，点击[这里](/#/auth)输入访问秘钥 🔑
-       \ 3️⃣ 如果你想消耗自己的 OpenAI 资源，点击[这里](/#/settings)修改设置 ⚙️
+       \ 1️⃣ 如果你正在使用私有部署版本，点击[这里](/#/auth)输入访问密钥 🔑
+       \ 2️⃣ 如果你想使用自己的 OpenAI-compatible API 资源，点击[这里](/#/settings)修改设置 ⚙️
        `,
   },
   Auth: {

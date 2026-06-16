@@ -1,21 +1,18 @@
 import { SubmitKey } from "../store/config";
 import { PartialLocaleType } from "../locales/index";
 import { getClientConfig } from "../config/client";
-import { SAAS_CHAT_UTM_URL } from "@/app/constant";
 const isApp = !!getClientConfig()?.isApp;
 
 const ru: PartialLocaleType = {
   WIP: "Скоро...",
   Error: {
     Unauthorized: isApp
-      ? `😆 В разговоре возникли некоторые проблемы, не переживайте:
-    \\ 1️⃣ Если вы хотите начать без настройки, [нажмите здесь, чтобы немедленно начать разговор 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ Если вы хотите использовать свои ресурсы OpenAI, нажмите [здесь](/#/settings), чтобы изменить настройки ⚙️`
-      : `😆 В разговоре возникли некоторые проблемы, не переживайте:
-    \ 1️⃣ Если вы хотите начать без настройки, [нажмите здесь, чтобы немедленно начать разговор 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ Если вы используете частную версию развертывания, нажмите [здесь](/#/auth), чтобы ввести ключ доступа 🔑
-    \ 3️⃣ Если вы хотите использовать свои ресурсы OpenAI, нажмите [здесь](/#/settings), чтобы изменить настройки ⚙️
- `,
+      ? `😆 Oops, there is an issue. No worries:
+     \ 1️⃣ Configure your own OpenAI-compatible API resources in [Settings](/#/settings) ⚙️`
+      : `😆 Oops, there is an issue. Let us fix it:
+     \ 1️⃣ Using a private setup? [Click here](/#/auth) to enter your access code 🔑
+     \ 2️⃣ Want to use your own OpenAI-compatible API resources? [Click here](/#/settings) to change settings ⚙️
+     `,
   },
   Auth: {
     Title: "Требуется пароль",

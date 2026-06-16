@@ -1,21 +1,18 @@
 import { SubmitKey } from "../store/config";
 import type { PartialLocaleType } from "./index";
 import { getClientConfig } from "../config/client";
-import { SAAS_CHAT_UTM_URL } from "@/app/constant";
 const isApp = !!getClientConfig()?.isApp;
 
 const bn: PartialLocaleType = {
   WIP: "শীঘ্রই আসছে...",
   Error: {
     Unauthorized: isApp
-      ? `😆 কথোপকথনে কিছু সমস্যা হয়েছে, চিন্তার কিছু নেই:
-    \\ 1️⃣ যদি আপনি শূন্য কনফিগারেশনে শুরু করতে চান, তাহলে [এখানে ক্লিক করে অবিলম্বে কথোপকথন শুরু করুন 🚀](${SAAS_CHAT_UTM_URL})
-    \\ 2️⃣ যদি আপনি আপনার নিজস্ব OpenAI সম্পদ ব্যবহার করতে চান, তাহলে [এখানে ক্লিক করুন](/#/settings) সেটিংস পরিবর্তন করতে ⚙️`
-      : `😆 কথোপকথনে কিছু সমস্যা হয়েছে, চিন্তার কিছু নেই:
-    \ 1️⃣ যদি আপনি শূন্য কনফিগারেশনে শুরু করতে চান, তাহলে [এখানে ক্লিক করে অবিলম্বে কথোপকথন শুরু করুন 🚀](${SAAS_CHAT_UTM_URL})
-    \ 2️⃣ যদি আপনি একটি প্রাইভেট ডেপ্লয়মেন্ট সংস্করণ ব্যবহার করেন, তাহলে [এখানে ক্লিক করুন](/#/auth) প্রবেশাধিকার কীগুলি প্রবেশ করতে 🔑
-    \ 3️⃣ যদি আপনি আপনার নিজস্ব OpenAI সম্পদ ব্যবহার করতে চান, তাহলে [এখানে ক্লিক করুন](/#/settings) সেটিংস পরিবর্তন করতে ⚙️
- `,
+      ? `😆 Oops, there is an issue. No worries:
+     \ 1️⃣ Configure your own OpenAI-compatible API resources in [Settings](/#/settings) ⚙️`
+      : `😆 Oops, there is an issue. Let us fix it:
+     \ 1️⃣ Using a private setup? [Click here](/#/auth) to enter your access code 🔑
+     \ 2️⃣ Want to use your own OpenAI-compatible API resources? [Click here](/#/settings) to change settings ⚙️
+     `,
   },
   Auth: {
     Title: "পাসওয়ার্ড প্রয়োজন",

@@ -1,7 +1,7 @@
 {
   "name": "openchat-llm",
   "private": false,
-  "license": "mit",
+  "license": "MIT",
   "scripts": {
     "mask": "npx tsx app/masks/build.ts",
     "mask:watch": "npx watch \"yarn mask\" app/masks",

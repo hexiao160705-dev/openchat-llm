@@ -1,7 +1,6 @@
 import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
 import { LocaleType } from "./index";
-import { SAAS_CHAT_UTM_URL } from "@/app/constant";
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
 
 const isApp = !!getClientConfig()?.isApp;
@@ -10,12 +9,10 @@ const en: LocaleType = {
   Error: {
     Unauthorized: isApp
       ? `😆 Oops, there's an issue. No worries:
-     \\ 1️⃣ Configure your own API resources in [Settings](${SAAS_CHAT_UTM_URL})
-     \\ 2️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️`
+     \\ 1️⃣ Configure your own OpenAI-compatible API resources in [Settings](/#/settings) ⚙️`
       : `😆 Oops, there's an issue. Let's fix it:
-     \ 1️⃣ Configure your own API resources in [Settings](${SAAS_CHAT_UTM_URL})
-     \ 2️⃣ Using a private setup? [Click here](/#/auth) to enter your key 🔑
-     \ 3️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️
+     \ 1️⃣ Using a private setup? [Click here](/#/auth) to enter your access code 🔑
+     \ 2️⃣ Want to use your own OpenAI-compatible API resources? [Click here](/#/settings) to change settings ⚙️
      `,
   },
   Auth: {
