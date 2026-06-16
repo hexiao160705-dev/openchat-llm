@@ -1,0 +1,14 @@
+{
+  "name": "openchat-llm",
+  "private": false,
+  "license": "mit",
+  "packageManager": "yarn@1.22.19",
+  "scripts": {
+    "dev": "concurrently -r \"yarn run mask:watch\" \"next dev\"",
+    "build": "yarn mask && cross-env BUILD_MODE=standalone next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:ci": "node --no-warnings --experimental-vm-modules $(yarn bin jest) --ci"
+  },
+  "notice": "This metadata was published as part of the stage-one release validation. Full source is prepared locally and requires Git/gh or bulk Git API upload for complete publishing."
+}
