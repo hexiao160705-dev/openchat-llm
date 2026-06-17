@@ -1,4 +1,5 @@
 import webpack from "webpack";
+import path from "path";
 
 const mode = process.env.BUILD_MODE ?? "standalone";
 console.log("[Next] build mode", mode);
@@ -23,6 +24,13 @@ const nextConfig = {
     config.resolve.fallback = {
       child_process: false,
     };
+
+    if (process.env.BUILD_APP) {
+      config.resolve.alias = {
+        ...(config.resolve.alias ?? {}),
+        "../mcp/actions": path.resolve("./app/mcp/actions.desktop.ts"),
+      };
+    }
 
     return config;
   },

@@ -1,11 +1,11 @@
 [package]
-name = "nextchat"
-version = "0.1.0"
-description = "A cross platform app for LLM ChatBot."
-authors = ["Yidadaa"]
-license = "mit"
-repository = ""
-default-run = "nextchat"
+name = "openchat-llm"
+version = "0.2.0"
+description = "Windows desktop preview for an OpenAI-compatible chat client."
+authors = ["hexiao160705-dev"]
+license = "MIT"
+repository = "https://github.com/hexiao160705-dev/openchat-llm"
+default-run = "openchat-llm"
 edition = "2021"
 rust-version = "1.60"
 
@@ -23,7 +23,6 @@ tauri = { version = "1.5.4", features = [ "http-all",
     "clipboard-all",
     "dialog-all",
     "shell-open",
-    "updater",
     "window-close",
     "window-hide",
     "window-maximize",

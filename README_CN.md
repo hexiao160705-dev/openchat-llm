@@ -22,7 +22,7 @@
 - 本地优先保存聊天记录
 - 支持 Markdown、LaTeX、Mermaid 和代码高亮
 - 继承上游的面具、提示词、插件、Artifacts 和 MCP 能力
-- 支持响应式 Web UI、PWA、深色模式、Docker 和 Vercel 部署
+- 支持响应式 Web UI、PWA、深色模式、Docker、Vercel 和 Windows 桌面端预览版部署
 
 ## 快速开始
 
@@ -46,6 +46,28 @@ yarn dev
 ```
 
 打开 `http://localhost:3000`。
+
+## Windows 桌面端预览版
+
+`openchat-llm v0.2.0` 提供基于 Tauri 的 Windows 桌面端预览版。
+
+从 GitHub Release 下载 Windows 安装包后即可安装。安装完成后，用户需要在设置页自行填写 OpenAI-compatible API Key、Base URL 和模型配置。本安装包不内置 API Key，不绑定公司中转站，不提供免费额度或付费承诺。
+
+第一版预览安装包不做代码签名，因此 Windows SmartScreen 可能出现安全提示。当前 MSI 默认安装到 `C:\Program Files\openchat-llm`，Windows 可能要求管理员授权。安装前请对照 Release Notes 中发布的 SHA256 校验值。
+
+本地构建命令：
+
+```shell
+yarn install
+yarn export
+yarn app:build
+```
+
+安装包产物通常位于：
+
+```text
+src-tauri/target/release/bundle/
+```
 
 ## Docker 部署
 

@@ -20,7 +20,7 @@ This is a personal experimental fork for validating a compliant MIT open-source 
 - Local-first chat history
 - Markdown, LaTeX, Mermaid, code highlighting
 - Prompt templates, masks, plugins, artifacts, and MCP support inherited from upstream
-- Responsive web UI, PWA, dark mode, Docker and Vercel deployment
+- Responsive web UI, PWA, dark mode, Docker, Vercel, and Windows desktop preview deployment
 
 ## What Changed From Upstream
 
@@ -72,6 +72,28 @@ Open `http://localhost:3000`.
 No real API key should be committed to this repository.
 
 ## Deploy
+
+### Windows Desktop Preview
+
+`openchat-llm v0.2.0` includes an experimental Windows desktop preview built with Tauri.
+
+Download the Windows installer from the GitHub Release page, install it, then configure your own OpenAI-compatible API key and base URL in Settings. The desktop preview does not include any bundled API key, company endpoint, free quota, or payment flow.
+
+This preview build is not code-signed. Windows SmartScreen may show a warning when installing or launching it. The MSI installs to `C:\Program Files\openchat-llm` and may require administrator approval on Windows. Verify the SHA256 checksum published in the release notes before installing.
+
+Build locally:
+
+```shell
+yarn install
+yarn export
+yarn app:build
+```
+
+The installer artifacts are generated under:
+
+```text
+src-tauri/target/release/bundle/
+```
 
 ### Docker
 

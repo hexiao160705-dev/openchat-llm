@@ -9,7 +9,7 @@
   },
   "package": {
     "productName": "openchat-llm",
-    "version": "2.16.1"
+    "version": "0.2.0"
   },
   "tauri": {
     "allowlist": {
@@ -60,7 +60,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "2023, Zhang Yifei All Rights Reserved.",
+      "copyright": "2026 hexiao160705-dev. Based on NextChat under the MIT License.",
       "deb": {
         "depends": []
       },
@@ -73,7 +73,7 @@
         "icons/icon.ico"
       ],
       "identifier": "dev.hexiao160705.openchat-llm",
-      "longDescription": "openchat-llm is an OpenAI-compatible chat client based on NextChat.",
+      "longDescription": "openchat-llm is an experimental Windows desktop preview of an OpenAI-compatible chat client based on NextChat. It does not include a bundled API key, company endpoint, free quota, or payment flow.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -82,8 +82,8 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "openchat-llm App",
-      "targets": "all",
+      "shortDescription": "OpenAI-compatible desktop chat client",
+      "targets": ["msi"],
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
@@ -95,7 +95,7 @@
       "dangerousUseHttpScheme": true
     },
     "updater": {
-      "active": true,
+      "active": false,
       "endpoints": [
         "https://github.com/hexiao160705-dev/openchat-llm/releases/latest/download/latest.json"
       ],
